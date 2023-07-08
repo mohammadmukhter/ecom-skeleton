@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner/Banner";
 import BannerRight from "../../components/BannerRight/BannerRight";
+import Products from "../Products/Products";
 
 const Home = () => {
   return (
@@ -9,6 +10,10 @@ const Home = () => {
           <Banner></Banner>
         </div>
         <BannerRight></BannerRight>
+      </div>
+
+      <div>
+        <Products></Products>
       </div>
 
       <h1>this is home or landing page</h1>
