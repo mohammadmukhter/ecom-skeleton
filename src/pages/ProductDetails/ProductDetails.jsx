@@ -5,7 +5,7 @@ const ProductDetails = () => {
   const location = useLocation();
   const product = location.state.product;
   return (
-    <div className="hero py-12 bg-black/10">
+    <div className="hero py-12 bg-black/10 text-gray-800">
       <div className="px-12 gap-8 flex flex-col lg:flex-row">
         <img src={product.img} className="max-w-sm rounded-lg shadow-2xl" />
         <div>

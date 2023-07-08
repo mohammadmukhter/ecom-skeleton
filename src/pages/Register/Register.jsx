@@ -38,7 +38,7 @@ const Register = () => {
         <div className="hero-content text-center text-gray-700">
           <div className="hero min-h-screen bg-transparent">
             <div className="hero-content ">
-              <div className="card  w-full mt-12 shadow-2xl bg-base-100/50">
+              <div className="card  w-full mt-12 shadow-2xl bg-white/50 ">
                 <h2 className="text-gray-800 text-3xl font-bold mt-6">
                   Register Now
                 </h2>
@@ -46,7 +46,7 @@ const Register = () => {
                   <div className="flex gap-4">
                     <div className="form-control">
                       <label className="label">
-                        <span className="label-text">Name</span>
+                        <span className="label-text text-gray-800">Name</span>
                       </label>
                       <input
                         type="text"
@@ -63,7 +63,7 @@ const Register = () => {
 
                     <div className="form-control">
                       <label className="label">
-                        <span className="label-text">Phone</span>
+                        <span className="label-text text-gray-800">Phone</span>
                       </label>
                       <input
                         type="text"
@@ -89,7 +89,9 @@ const Register = () => {
                   <div className="flex gap-4">
                     <div className="form-control w-full">
                       <label className="label">
-                        <span className="label-text">Password</span>
+                        <span className="label-text text-gray-800">
+                          Password
+                        </span>
                       </label>
                       <input
                         type="password"
@@ -121,7 +123,9 @@ const Register = () => {
                     </div>
                     <div className="form-control">
                       <label className="label">
-                        <span className="label-text">Confirm Password</span>
+                        <span className="label-text text-gray-800">
+                          Confirm Password
+                        </span>
                       </label>
                       <input
                         type="password"
@@ -142,7 +146,7 @@ const Register = () => {
 
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Email</span>
+                      <span className="label-text text-gray-800">Email</span>
                     </label>
                     <input
                       type="email"

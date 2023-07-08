@@ -1,10 +1,15 @@
 import { FaCartPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import cartDataSet from "../../utils/cartDataSet";
 
 const ProductCard = ({ product }) => {
-  console.log(product);
+  const cartHandler = (product_id) => {
+    // product cart data set util function
+    cartDataSet(product_id);
+  };
+
   return (
-    <div className="card card-compact w-full bg-base-100 border-[1px] border-gray-100 rounded-md shadow-sm flex justify-between text-center md:text-left  ">
+    <div className="card card-compact w-full bg-white text-gray-700 border-[1px] border-gray-100 rounded-md shadow-sm flex justify-between text-center md:text-left  ">
       <div>
         <figure className="p-4">
           <img
@@ -30,7 +35,10 @@ const ProductCard = ({ product }) => {
         >
           Details
         </Link>
-        <button className="px-3 py-1 rounded-md border-[1px] border-black hover:bg-black/90 hover:text-white uppercase font-semibold">
+        <button
+          onClick={() => cartHandler(product.product_id)}
+          className="px-3 py-1 rounded-md border-[1px] border-black hover:bg-black/90 hover:text-white uppercase font-semibold"
+        >
           <FaCartPlus></FaCartPlus>
         </button>
       </div>

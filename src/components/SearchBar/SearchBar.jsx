@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const SearchBar = () => {
   return (
-    <div className="border-b border-b-gray-100">
-      <div className=" navbar bg-base-100 max-w-7xl mx-auto flex flex-wrap md:flex-nowrap">
+    <div className="border-b border-b-gray-100 text-gray-600">
+      <div className=" navbar bg-white max-w-7xl mx-auto flex flex-wrap md:flex-nowrap">
         <Link to="/" className="btn btn-ghost normal-case text-xl order-1">
           My Shops
         </Link>
@@ -57,7 +57,7 @@ const SearchBar = () => {
             </label>
             <div
               tabIndex={0}
-              className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow z-50"
+              className="mt-3 card card-compact dropdown-content w-52 bg-white shadow z-50"
             >
               <div className="card-body">
                 <span className="font-bold text-lg">8 Items</span>
@@ -81,7 +81,7 @@ const SearchBar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52  z-50"
+              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52  z-50"
             >
               <li>
                 <a className="justify-between">

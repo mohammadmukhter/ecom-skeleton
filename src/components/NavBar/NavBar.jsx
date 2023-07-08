@@ -19,10 +19,10 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className="shadow-md bg-white">
+    <div className="shadow-md bg-white text-gray-600">
       <SearchBar></SearchBar>
       <div>
-        <div className="navbar bg-base-100 p-0 max-w-7xl mx-auto">
+        <div className="navbar bg-white p-0 max-w-7xl mx-auto">
           <div className="navbar-start ">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -43,7 +43,7 @@ const NavBar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 uppercase text-lg font-semibold text-gray-600 z-50"
+                className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52 uppercase text-lg font-semibold text-gray-600 z-50"
               >
                 {navList}
               </ul>
