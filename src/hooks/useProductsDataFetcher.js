@@ -30,7 +30,7 @@ const useProductsDataFetcher = () => {
     dataFetcher();
   }, []);
 
-  return [products, loading]
+  return [products, loading];
    
 };
 

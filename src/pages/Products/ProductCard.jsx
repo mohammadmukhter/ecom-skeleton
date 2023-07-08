@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { FaCartPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import cartDataSet from "../../utils/cartDataSet";
+import { CartContext } from "../../provider/CartProvider";
 
 const ProductCard = ({ product }) => {
+  const { cartDataSet } = useContext(CartContext);
+
   const cartHandler = (product_id) => {
     // product cart data set util function
     cartDataSet(product_id);

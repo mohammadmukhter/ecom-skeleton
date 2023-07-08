@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import SearchBar from "../SearchBar/SearchBar";
-``;
 const NavBar = () => {
   const navList = (
     <>
