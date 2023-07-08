@@ -2,7 +2,11 @@ import useProductsDataFetcher from "../../hooks/useProductsDataFetcher";
 import ProductCard from "./ProductCard";
 
 const Products = () => {
-  const [products] = useProductsDataFetcher();
+  const [products, loading] = useProductsDataFetcher();
+
+  if (loading) {
+    return <h1>Loading......</h1>;
+  }
 
   return (
     <div className="shadow-[2px_3px_3px_3px_rgba(0,199,100,0.05)] bg-white px-4 py-8 my-12 rounded-md">

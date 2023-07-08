@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 
 const useProductsDataFetcher = () => {
     const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const dataFetcher = async () => {
+       setLoading(true);
         const data = await axios
         .get(
           `https://api.jsonbin.io/v3/b/${
@@ -19,13 +21,14 @@ const useProductsDataFetcher = () => {
         );
      if(data){
         const products = data.data.record.products;
-            setProducts(products);
+        setProducts(products);
+        setLoading(false);
      }
     };
     dataFetcher();
   }, []);
 
-  return [products]
+  return [products, loading]
    
 };
 
