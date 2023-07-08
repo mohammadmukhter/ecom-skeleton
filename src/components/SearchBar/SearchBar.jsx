@@ -8,7 +8,7 @@ const SearchBar = () => {
     (sum, data) => data.cartValue + sum,
     0
   );
-  console.log(totalCartItem);
+  // console.log(totalCartItem);
 
   return (
     <div className="border-b border-b-gray-100 text-gray-600">
