@@ -68,12 +68,20 @@ const Register = () => {
                       <input
                         type="text"
                         placeholder="phone"
-                        {...register("phone", { required: true })}
+                        {...register("phone", {
+                          required: true,
+                          pattern: /(^(\+88|0088)?(01){1}[3456789]{1}(\d){8})$/,
+                        })}
                         className="input input-bordered"
                       />
-                      {errors.phone && (
+                      {errors.phone?.type === "required" && (
                         <span className="text-red-600 text-left text-sm w-64 mt-1">
-                          phone is required
+                          Phone is required
+                        </span>
+                      )}
+                      {errors.phone?.type === "pattern" && (
+                        <span className="text-red-600 text-left text-sm w-64 mt-1">
+                          Only accept bangladeshi valid phone number!
                         </span>
                       )}
                     </div>
