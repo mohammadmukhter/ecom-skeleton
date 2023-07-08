@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 const SearchBar = () => {
   return (
     <div className="border-b border-b-gray-100">
-      <div className=" navbar bg-base-100 max-w-7xl mx-auto ">
-        <div className="flex-1">
-          <Link to="/" className="btn btn-ghost normal-case text-xl">
-            My Shops
-          </Link>
-          <div className="flex w-1/2 mx-auto">
+      <div className=" navbar bg-base-100 max-w-7xl mx-auto flex flex-wrap md:flex-nowrap">
+        <Link to="/" className="btn btn-ghost normal-case text-xl order-1">
+          My Shops
+        </Link>
+        <div className="flex-1 basis-full order-3 md:order-2">
+          <div className="flex w-full md:w-1/2 mx-auto">
             <div className="form-control w-full">
               <input
                 type="text"
@@ -22,7 +22,7 @@ const SearchBar = () => {
           </div>
         </div>
 
-        <div className="flex-none gap-2">
+        <div className="flex-none gap-2 md:order-3 order-2 ml-auto">
           <Link
             to="/login"
             className="px-2 py-1 border-[1px] hover:bg-gray-950 hover:text-white rounded-md text-xl font-semibold"
@@ -63,9 +63,12 @@ const SearchBar = () => {
                 <span className="font-bold text-lg">8 Items</span>
                 <span className="text-info">Subtotal: $999</span>
                 <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
+                  <Link
+                    to="/myCartPage"
+                    className="px-2 py-1 border-[1px] w-full text-center hover:bg-gray-950 hover:text-white rounded-md text-xl font-semibold"
+                  >
                     View cart
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
