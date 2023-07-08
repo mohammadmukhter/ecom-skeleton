@@ -22,12 +22,18 @@ const SearchBar = () => {
           </div>
         </div>
 
-        <div className="flex-none">
+        <div className="flex-none gap-2">
           <Link
             to="/login"
             className="px-2 py-1 border-[1px] hover:bg-gray-950 hover:text-white rounded-md text-xl font-semibold"
           >
             Login
+          </Link>
+          <Link
+            to="/register"
+            className="px-2 py-1 border-[1px] hover:bg-gray-950 hover:text-white rounded-md text-xl font-semibold"
+          >
+            Register
           </Link>
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle">

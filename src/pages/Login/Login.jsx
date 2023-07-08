@@ -27,7 +27,7 @@ const Login = () => {
         <div className="hero-content text-center text-gray-700">
           <div className="hero min-h-screen bg-transparent">
             <div className="hero-content">
-              <div className="card w-full max-w-sm shadow-2xl bg-base-100/50">
+              <div className="card w-full md:w-[600px] max-w-sm shadow-2xl bg-base-100/50">
                 <h2 className="text-gray-800 text-3xl font-bold mt-6">
                   Please Login
                 </h2>

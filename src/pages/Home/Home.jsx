@@ -13,7 +13,7 @@ const Home = () => {
       </div>
 
       <div>
-        <Products></Products>
+        <Products limit={10}></Products>
       </div>
 
       <h1>this is home or landing page</h1>

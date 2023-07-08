@@ -23,7 +23,11 @@ const ProductCard = ({ product }) => {
       </div>
 
       <div className="md:m-4 mt-0 flex gap-2 mx-auto mb-4">
-        <Link className="px-3 py-1 rounded-md border-[1px] border-black hover:bg-black/90 hover:text-white uppercase font-semibold text-md">
+        <Link
+          to="/productDetails"
+          state={{ product }}
+          className="px-3 py-1 rounded-md border-[1px] border-black hover:bg-black/90 hover:text-white uppercase font-semibold text-md"
+        >
           Details
         </Link>
         <button className="px-3 py-1 rounded-md border-[1px] border-black hover:bg-black/90 hover:text-white uppercase font-semibold">
