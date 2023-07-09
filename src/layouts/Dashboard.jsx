@@ -9,7 +9,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (
-    <div className="drawer lg:drawer-open">
+    <div className="drawer lg:drawer-open bg-white">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center">
         <Outlet></Outlet>
@@ -39,7 +39,7 @@ const Dashboard = () => {
             </Link>
           </li>
           <li>
-            <Link to="/dashboard/products">
+            <Link to="/dashboard/manageProducts">
               <FaListAlt></FaListAlt>Products
             </Link>
           </li>

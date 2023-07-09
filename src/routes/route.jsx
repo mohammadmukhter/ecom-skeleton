@@ -4,6 +4,7 @@ import Main from "../layouts/Main";
 import CheckoutPage from "../pages/CheckoutPage/CheckoutPage";
 import AddProduct from "../pages/Dashboard/Admin/AddProduct";
 import AdminHome from "../pages/Dashboard/Admin/AdminHome";
+import ManageProducts from "../pages/Dashboard/Admin/ManageProducts";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import MyCartPage from "../pages/MycartPage/MycartPage";
@@ -57,6 +58,10 @@ const route = createBrowserRouter([
       {
         path: "addProduct",
         element: <AddProduct></AddProduct>,
+      },
+      {
+        path: "manageProducts",
+        element: <ManageProducts></ManageProducts>,
       },
     ],
   },
