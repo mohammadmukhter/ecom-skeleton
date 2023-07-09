@@ -6,6 +6,16 @@ const ManageProducts = () => {
   const [products, loading] = useProductsDataFetcher();
   //   console.log(products);
 
+  if (loading) {
+    return (
+      <div className="w-full mt-24 flex items-center justify-center">
+        <span className="loading loading-ring loading-lg"></span>
+        <span className="loading loading-ring loading-lg"></span>
+        <span className="loading loading-ring loading-lg"></span>
+      </div>
+    );
+  }
+
   return (
     <div className="w-full px-4">
       <div className=" bg-gray-800 py-4 flex flex-col md:flex-row justify-start md:justify-center items-center rounded-t-md">
