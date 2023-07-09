@@ -1,10 +1,4 @@
-import {
-  FaHome,
-  FaHouseUser,
-  FaListAlt,
-  FaPlusCircle,
-  FaUserFriends,
-} from "react-icons/fa";
+import { FaHome, FaHouseUser, FaListAlt, FaPlusCircle } from "react-icons/fa";
 import { Link, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
@@ -28,11 +22,7 @@ const Dashboard = () => {
               <FaHouseUser> </FaHouseUser>Admin Home
             </Link>
           </li>
-          <li>
-            <Link to="/dashboard/adminHome">
-              <FaUserFriends></FaUserFriends>Manage Users
-            </Link>
-          </li>
+
           <li>
             <Link to="/dashboard/addProduct">
               <FaPlusCircle></FaPlusCircle>Add Product
