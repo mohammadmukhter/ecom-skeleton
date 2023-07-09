@@ -7,7 +7,7 @@ import AdminHome from "../pages/Dashboard/Admin/AdminHome";
 import ManageProducts from "../pages/Dashboard/Admin/ManageProducts";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
-import MyCartPage from "../pages/MycartPage/MycartPage";
+import MyCartPage from "../pages/MyCartPage/MyCartPage";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import ProductsPage from "../pages/ProductsPage/ProductsPage";
 import Register from "../pages/Register/Register";
