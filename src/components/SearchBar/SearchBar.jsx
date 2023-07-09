@@ -8,7 +8,11 @@ const SearchBar = () => {
     (sum, data) => data.cartValue + sum,
     0
   );
-  // console.log(totalCartItem);
+  const totalCartPrice = cartData?.reduce((sum, data) => {
+    const price = parseFloat(data.price.slice(1));
+    console.log(price);
+    return price + sum;
+  }, 0);
 
   return (
     <div className="border-b border-b-gray-100 text-gray-600">
@@ -72,7 +76,7 @@ const SearchBar = () => {
             >
               <div className="card-body">
                 <span className="font-bold text-lg">{totalCartItem} Items</span>
-                <span className="text-info">Subtotal: $999</span>
+                <span className="text-info">Subtotal: ${totalCartPrice}</span>
                 <div className="card-actions">
                   <Link
                     to="/myCartPage"

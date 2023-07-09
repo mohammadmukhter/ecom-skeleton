@@ -43,8 +43,9 @@ const MyCartPage = () => {
                           -
                         </button>
                         <input
-                          className="w-12 h-12 border-y-[1px]"
+                          className="w-12 h-12 border-y-[1px] text-center font-bold text-gray-700"
                           type="number"
+                          defaultValue={item.cartValue}
                         />
                         <button className="w-12 h-12 border-[1px] rounded-r-md">
                           +
@@ -85,7 +86,11 @@ const MyCartPage = () => {
             </div>
           </div>
           <div className="mt-6  w-full flex text-center font-semibold">
-            <Link className="w-full bg-transparent border-[1px] px-4 py-2 rounded-md hover:bg-black hover:text-gray-100 uppercase">
+            <Link
+              state={{ cartData }}
+              to="/checkout"
+              className="w-full bg-transparent border-[1px] px-4 py-2 rounded-md hover:bg-black hover:text-gray-100 uppercase"
+            >
               Confirm Order
             </Link>
           </div>

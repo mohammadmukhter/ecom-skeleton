@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layouts/Main";
+import CheckoutPage from "../pages/CheckoutPage/CheckoutPage";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import MyCartPage from "../pages/MycartPage/MycartPage";
@@ -35,6 +36,10 @@ const route = createBrowserRouter([
       {
         path: "myCartPage",
         element: <MyCartPage></MyCartPage>,
+      },
+      {
+        path: "checkout",
+        element: <CheckoutPage></CheckoutPage>,
       },
     ],
   },
